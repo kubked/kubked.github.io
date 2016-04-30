@@ -15,35 +15,27 @@
 #placeholder {
 	margin: auto auto;
 	font-family: sans-serif;
-	text-decoration: none;
-	font-size: 2em;
-	font-weight: bold;
-	color: cornflowerblue;
-	/*color: gainsboro;*/
+	color: gainsboro;
 }
 body {
-    background: center url("http://www.lifemaideasy.com/wp-content/uploads/2016/02/tips-for-moving-scottsdale-arizona.jpg");
+    background: center url("http://www.blogcdn.com/slideshows/images/slides/272/863/0/S2728630/slug/l/cardboard-boxes-background-2.jpg");
     background-size: cover;
     margin: 0;
 }
-
   </style>
 </head>
 <body>
 <div id="content">
-<a href="https://youtu.be/hRRIUTfbzxY?t=42" id="placeholder"></a>
+<h1 id="placeholder"></h1>
 </div>
   <script>
-
   function setRemainingTime() {
-  var t = new Date("2016/05/02 12:00:00") - Date.now();
+  var t = new Date("2016/05/01 00:00:00") - Date.now();
   var seconds = Math.floor( (t/1000) % 60 );
   var minutes = Math.floor( (t/1000/60) % 60 );
   var hours = Math.floor( (t/(1000*60*60)));
-
   document.getElementById("placeholder").textContent = (hours < 10 ? "0" : "") + hours + ":" + (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
   }
-
   setRemainingTime();
   setInterval(setRemainingTime, 1000);
   </script>
